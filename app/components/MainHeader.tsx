@@ -8,7 +8,7 @@ export default function MainHeader(): JSX.Element {
       <div className={styles.container}>
         <h1 className={styles.name}>Suhyeon Maeng</h1>
         <div className={styles.wrapper}>
-          <p className={styles.subtitle}>Frontend Developer</p>
+          <h2 className={styles.subtitle}>Frontend Developer</h2>
           <div className={styles.links}>
             <Link
               className={styles.link}

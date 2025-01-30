@@ -7,7 +7,7 @@ export default function MainFooter() {
         <p>
           <a href="mailto:job.maengsh@gmail.com">Contact Me</a>
         </p>
-        <p>© {new Date().getFullYear()} Suhyeon Maeng All rights reserved.</p>
+        <p>©{new Date().getFullYear()} Suhyeon Maeng All rights reserved.</p>
       </div>
     </footer>
   );

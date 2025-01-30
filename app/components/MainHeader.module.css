@@ -1,20 +1,15 @@
 .header {
-  /* background: #a1c181; */
   background: linear-gradient(135deg, #c6daf7 0%, #d8bfd8 100%);
   background: linear-gradient(135deg, #f8ede3 0%, #a8dadc 100%);
   text-align: center;
-  color: #fff;
   color: #264653;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 2rem 10%;
-  }
+  padding: 1.5rem 10%;
 }
 
 .subtitle {
   margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
   &::after {
     margin-left: 1rem;
     content: "|";
@@ -24,12 +19,19 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 0.6rem;
 }
 
 .link {
   margin-right: 1rem;
+  width: max-content;
+  transition: text-shadow 0.2s ease-in-out;
 
   &:last-child {
     margin: 0;
+  }
+
+  &:hover {
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
   }
 }
