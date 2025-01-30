@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import MainHeader from "@/components/main-header/main-header";
+import MainHeader from "@/components/MainHeader";
 import "./globals.css";
+import styles from "@/layout.module.css";
+import MainFooter from "./components/MainFooter";
 
 export const metadata: Metadata = {
   title: "Next SH World",
@@ -16,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {" "}
-        <MainHeader />
-        {children}
+        <div className={styles.layout}>
+          <MainHeader />
+          <main className={styles.mainContents}>{children}</main>
+          <MainFooter />
+        </div>
       </body>
     </html>
   );

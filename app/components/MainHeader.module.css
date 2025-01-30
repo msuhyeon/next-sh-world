@@ -1,0 +1,35 @@
+.header {
+  /* background: #a1c181; */
+  background: linear-gradient(135deg, #c6daf7 0%, #d8bfd8 100%);
+  background: linear-gradient(135deg, #f8ede3 0%, #a8dadc 100%);
+  text-align: center;
+  color: #fff;
+  color: #264653;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2rem 10%;
+  }
+}
+
+.subtitle {
+  margin-right: 1rem;
+  &::after {
+    margin-left: 1rem;
+    content: "|";
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  margin-right: 1rem;
+
+  &:last-child {
+    margin: 0;
+  }
+}
