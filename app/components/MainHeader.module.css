@@ -6,32 +6,19 @@
   padding: 1.5rem 10%;
 }
 
+.name {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
 .subtitle {
   margin-right: 1rem;
   font-size: 1rem;
   font-weight: 500;
-  &::after {
-    margin-left: 1rem;
-    content: "|";
-  }
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
   margin-top: 0.6rem;
-}
-
-.link {
-  margin-right: 1rem;
-  width: max-content;
-  transition: text-shadow 0.2s ease-in-out;
-
-  &:last-child {
-    margin: 0;
-  }
-
-  &:hover {
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
-  }
 }
