@@ -40,3 +40,8 @@ a {
     color-scheme: dark;
   }
 }
+
+::selection {
+  background: #ffcc80;
+  color: #222222;
+}

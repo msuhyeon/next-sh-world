@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MainHeader from "@/components/MainHeader";
+import "./reset.css";
 import "./globals.css";
 import styles from "@/layout.module.css";
 import MainFooter from "./components/MainFooter";
