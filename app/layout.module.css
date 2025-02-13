@@ -8,3 +8,9 @@
   flex: 1;
   margin: 4rem 17rem;
 }
+
+@media (max-width: 360px) {
+  .mainContents {
+    margin: 1rem 2rem;
+  }
+}
