@@ -21,18 +21,21 @@ export default function Home() {
           </div>
           <div className={styles.textContent}>
             <h2 className={styles.greeting}>
-              안녕하세요! <br /> 더 나은 경험을 만드는
+              안녕하세요! <br /> 사용자 경험을 구현하는 FE개발자&nbsp;
               <span className={styles.textName}>맹수현</span>입니다.
             </h2>
             <ul className={styles.descriptionWrapper}>
               <li className={styles.description}>
-                프론트엔드 개발자로서
-                <strong>UI/UX 개선, 성능 최적화, 협업</strong>을 중요하게
-                생각합니다.
+                Vue와 React를 활용하여 <strong>빠르고 직관적인</strong> 웹
+                애플리케이션을 개발합니다.
               </li>
               <li className={styles.description}>
-                Vue.js와 React.js를 활용하여
-                <strong>사용자 중심의 웹 애플리케이션</strong>을 개발합니다.
+                <strong>성능 최적화와 코드 품질 향상</strong>을 위해 지속적으로
+                고민합니다.
+              </li>
+              <li className={styles.description}>
+                대규모 프로젝트 경험을 바탕으로
+                <strong>확장성과 유지보수성을 고려한 개발</strong>을 지향합니다.
               </li>
             </ul>
           </div>
@@ -88,7 +91,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <WorkExperience /> */}
+      <WorkExperience />
     </>
   );
 }
