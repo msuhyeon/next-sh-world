@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./MainFooter.module.css";
+import styles from "./MainFooter.module.scss";
 
 export default function MainFooter() {
   return (

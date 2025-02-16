@@ -1,9 +1,8 @@
-import WorkExperience from "./components/WorkExperience";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Image from "next/image";
 import { FaCode, FaBolt, FaUsers } from "react-icons/fa";
-
 import Profile from "../public/pic.jpeg";
+import ProjectList from "./components/ProjectList";
 
 export default function Home() {
   return (
@@ -45,19 +44,19 @@ export default function Home() {
             <div className={styles.skillBox}>
               <h3 className={styles.h3Title}>
                 <FaCode className={styles.icon} />
-                Frontend 기술
+                Frontend 개발 역량
               </h3>
 
               <ul>
-                <li>
-                  Vue.js 애플리케이션에서 JWT 인증과 RSA 암호화를 통해 보안을
-                  강화
-                </li>
                 <li>
                   Options API를 Composition API로 리팩토링하여 코드의
                   유지보수성과 가독성을 개선
                 </li>
                 <li>Vite를 활용하여 효율적인 개발 환경과 빌드 시스템을 구축</li>
+                <li>
+                  JWT 기반 인증 시스템을 구축하고, 비밀번호 보안을 위해 RSA
+                  암호화를 적용하여 회원가입, 로그인, 로그아웃 구현
+                </li>
               </ul>
             </div>
             <div className={styles.skillBox}>
@@ -91,7 +90,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <WorkExperience />
+      <ProjectList />
     </>
   );
 }

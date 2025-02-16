@@ -1,6 +1,6 @@
-import styles from "./MainHeader.module.css";
+import styles from "./MainHeader.module.scss";
 
-export default function MainHeader(): JSX.Element {
+export default function MainHeader() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
