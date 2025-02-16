@@ -125,15 +125,15 @@
 }
 
 .skillBox {
-  background: white;
-  padding: 2rem;
+  background: #fff;
+  padding: 2rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: calc(33% - 2rem);
 
   &:hover {
-    transform: perspective(1000px) scale(1.03);
+    // transform: perspective(1000px) scale(1.03);
   }
 
   @include mobile {
@@ -168,14 +168,15 @@
   }
 }
 
-.skillBox ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skillBox li {
+.skillBox .introItem {
   font-size: 0.9rem;
-  margin-bottom: 5px;
+  margin-left: 10px;
+  line-height: 1.5;
+  list-style-type: disc;
+
+  &:first-child {
+    margin-bottom: 0.3rem;
+  }
 
   @include mobile {
     font-size: 0.8rem;

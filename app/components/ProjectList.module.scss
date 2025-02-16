@@ -4,9 +4,15 @@
 
 .title {
   text-align: center;
+  margin: 0 auto;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
+  background-color: #badadb;
+  color: #fff;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 30px;
 }
 
 .projectContainer {

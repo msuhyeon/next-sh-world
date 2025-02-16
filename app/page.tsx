@@ -54,16 +54,14 @@ export default function Home() {
                 <FaCode className={styles.icon} />
                 Frontend 개발 역량
               </h3>
-
-              <ul>
-                <li>
+              <ul className={styles.introList}>
+                <li className={styles.introItem}>
                   Options API를 Composition API로 리팩토링하여 코드의
-                  유지보수성과 가독성을 개선
+                  유지보수성과 가독성을 개선했습니다.
                 </li>
-                <li>Vite를 활용하여 효율적인 개발 환경과 빌드 시스템을 구축</li>
-                <li>
-                  JWT 기반 인증 시스템을 구축하고, 비밀번호 보안을 위해 RSA
-                  암호화를 적용하여 회원가입, 로그인, 로그아웃 구현
+                <li className={styles.introItem}>
+                  Vite를 활용하여 효율적인 개발 환경과 빌드 시스템을
+                  구축했습니다.
                 </li>
               </ul>
             </div>
@@ -73,10 +71,13 @@ export default function Home() {
                 UI/UX 설계 및 사용자 중심 개발
               </h3>
               <ul>
-                <li>
-                  디자인 기반의 UI를 구현하여 사용자 경험을 최우선으로 고려
+                <li className={styles.introItem}>
+                  디자인 기반의 UI를 구현하여 사용자 경험을 최우선으로
+                  고려합니다.
                 </li>
-                <li>디자이너 및 기획자와 협업하여 최적의 사용자 경험을 제공</li>
+                <li className={styles.introItem}>
+                  디자이너 및 기획자와 협업하여 최적의 사용자 경험을 제공합니다.
+                </li>
               </ul>
             </div>
             <div className={styles.skillBox}>
@@ -86,12 +87,12 @@ export default function Home() {
                 성능 최적화 및 협업
               </h3>
               <ul>
-                <li>
+                <li className={styles.introItem}>
                   Lighthouse를 활용하여 웹 성능을 측정하고, Lazy Loading을
-                  적용하여 로딩 속도를 개선
+                  적용하여 로딩 속도를 개선합니다.
                 </li>
-                <li>
-                  GitHub PR 리뷰와 코드 컨벤션을 통해 협업의 효율성을 높임
+                <li className={styles.introItem}>
+                  GitHub PR 리뷰와 코드 컨벤션을 통해 협업의 효율성을 높입니다.
                 </li>
               </ul>
             </div>

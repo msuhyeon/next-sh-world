@@ -14,7 +14,7 @@ const project = [
   //   screenshot: [],
   // },
   {
-    title: "날씨 요정의 추천",
+    title: "Weather wear",
     period: "2025.02",
     subtitle: "날씨 기반 의류 추천 웹 애플리케이션",
     description: [
@@ -23,7 +23,7 @@ const project = [
       "React Query를 활용해 데이터 캐싱을 최적화하고 불필요한 중복 호출을 방지",
       "Zustand로 상태 관리하여 지역별 날씨 조회 UX 개선",
     ],
-    video: "https://next-sh-world.vercel.app/weatherwear.webp",
+    // video: "https://next-sh-world.vercel.app/weatherwear.webp",
   },
   {
     title: "PR 사이트",

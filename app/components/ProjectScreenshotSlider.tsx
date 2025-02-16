@@ -14,6 +14,7 @@ const ProjectScreenshotSlider = ({ images }: { images: string[] }) => {
       spaceBetween={10}
       slidesPerView={1}
       navigation
+      loop
       pagination={{ clickable: true }}
       className={styles.swiper}
     >
