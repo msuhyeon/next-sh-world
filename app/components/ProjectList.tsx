@@ -39,11 +39,7 @@ const project = [
       "React Query로 API 데이터 캐싱하여 API 호출 수 50% 감소",
       "Zustand로 상태 관리하여 지역별 날씨 조회 UX 개선",
     ],
-    screenshot: [
-      "https://next-sh-world.vercel.app/onestop_main.png",
-      "https://next-sh-world.vercel.app/onestop_pay.png",
-      "https://next-sh-world.vercel.app/onestop_event.png",
-    ],
+    video: "https://next-sh-world.vercel.app/nuxt_portfolio.webp",
   },
 ];
 

@@ -60,18 +60,23 @@
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
+  text-align: center;
 
   @include mobile {
     font-size: 1.2rem;
+    text-align: left;
   }
 }
 
 .period {
   font-size: 0.9rem;
   color: gray;
+  text-align: center;
+  line-height: 1.3;
 
   @include mobile {
     font-size: 0.8rem;
+    text-align: left;
   }
 }
 
