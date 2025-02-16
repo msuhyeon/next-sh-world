@@ -1,0 +1,17 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContents {
+  flex: 1;
+  margin: 4rem 17rem;
+}
+
+@media (max-width: 780px) {
+  .mainContents {
+    flex: none;
+    margin: 1rem 2rem;
+  }
+}
