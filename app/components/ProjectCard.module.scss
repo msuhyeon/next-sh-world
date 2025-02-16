@@ -21,9 +21,9 @@
   justify-content: space-between;
   gap: 2rem;
   width: 100%;
+  flex-direction: column-reverse;
 
   @include mobile {
-    flex-direction: column-reverse;
     text-align: center;
     gap: 1rem;
     margin-top: 1rem;
@@ -32,7 +32,7 @@
 .cardTextContents {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 100%;
 
   @include mobile {
     width: 100%;
@@ -41,7 +41,7 @@
 
 .projectInfo {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
 
   @include mobile {
     max-width: 100%;
@@ -118,6 +118,7 @@
 
 .cardImgContents {
   width: 60%;
+  margin-top: 1rem;
 
   @include mobile {
     width: 100%;

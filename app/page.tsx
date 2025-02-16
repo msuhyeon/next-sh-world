@@ -20,21 +20,29 @@ export default function Home() {
           </div>
           <div className={styles.textContent}>
             <h2 className={styles.greeting}>
-              안녕하세요! <br /> 사용자 경험을 구현하는 FE개발자&nbsp;
+              <span className={styles.fadeInText}>안</span>
+              <span className={styles.fadeInText}>녕</span>
+              <span className={styles.fadeInText}>하</span>
+              <span className={styles.fadeInText}>세</span>
+              <span className={styles.fadeInText}>요</span>
+              <br /> 프론트엔드 개발자&nbsp;
               <span className={styles.textName}>맹수현</span>입니다.
             </h2>
+
             <ul className={styles.descriptionWrapper}>
               <li className={styles.description}>
-                Vue와 React를 활용하여 <strong>빠르고 직관적인</strong> 웹
-                애플리케이션을 개발합니다.
+                팀원들과 지속적으로 피드백을 주고받으며 함께 성장하는 걸
+                중요하게 생각합니다.
               </li>
               <li className={styles.description}>
-                <strong>성능 최적화와 코드 품질 향상</strong>을 위해 지속적으로
-                고민합니다.
+                사용자 경험을 더 나은 방향으로 개선하는 데 관심이 많아요.
               </li>
               <li className={styles.description}>
-                대규모 프로젝트 경험을 바탕으로
-                <strong>확장성과 유지보수성을 고려한 개발</strong>을 지향합니다.
+                복잡한 UI 로직을 단순화하면서 가독성과 유지보수성을 높이는 걸
+                즐겨요.
+              </li>
+              <li className={styles.description}>
+                기술 토론을 통해 더 좋은 솔루션을 찾는 과정에서 보람을 느껴요.
               </li>
             </ul>
           </div>
