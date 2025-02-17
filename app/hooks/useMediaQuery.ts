@@ -4,10 +4,16 @@ import { useState, useEffect } from "react";
 
 function useMediaQuery(query: string): boolean {
   const [isMatching, setIsMatching] = useState<boolean>(() => {
+    // 서버 실행 시 방어코드
+    if (typeof window === "undefined") return false;
+
     return window.matchMedia(query).matches;
   });
 
   useEffect(() => {
+    // 서버 실행 시 방어코드
+    if (typeof window === "undefined") return;
+
     const mediaQueryList = window.matchMedia(query);
     const updateMatch = (event: MediaQueryListEvent) => {
       setIsMatching(event.matches);
