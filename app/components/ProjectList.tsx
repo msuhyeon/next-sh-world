@@ -23,6 +23,9 @@ const project = [
       "React Query를 활용해 데이터 캐싱을 최적화하고 불필요한 중복 호출을 방지",
       "Zustand로 상태 관리하여 지역별 날씨 조회 UX 개선",
     ],
+    techStack: [],
+    github: "https://github.com/msuhyeon/weather-wear",
+    demoUrl: "https://weather-wear-theta.vercel.app/",
     // video: "https://next-sh-world.vercel.app/weatherwear.webp",
   },
   {
@@ -30,6 +33,8 @@ const project = [
     period: "2024.08",
     subtitle: "포트폴리오용 웹 사이트(Nuxt.js)",
     description: ["Nuxt.js와 Vue로 개발한 포트폴리오용 웹사이트"],
+    github: "https://github.com/msuhyeon/monorepo-template",
+    demoUrl: "",
     video: "https://next-sh-world.vercel.app/nuxt_portfolio.webp",
   },
   {
@@ -44,6 +49,8 @@ const project = [
       "React Query로 API 데이터 캐싱하여 API 호출 수 50% 감소",
       "Zustand로 상태 관리하여 지역별 날씨 조회 UX 개선",
     ],
+    techStack: [],
+    demoUrl: "https://mir2-onestop.mironline.co.kr/",
     screenshot: [
       "https://next-sh-world.vercel.app/mir2_onestop_main.png",
       "https://next-sh-world.vercel.app/mir2_onestop_pay.png",

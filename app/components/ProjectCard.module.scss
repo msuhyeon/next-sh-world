@@ -1,136 +1,125 @@
+$primary-color: #3884d1;
+$dark-bg: #333;
+$light-bg: #f9f9f9;
+$border-radius: 8px;
+$transition-time: 0.2s;
+
 @mixin mobile {
   @media (max-width: 480px) {
     @content;
   }
 }
 
-.card {
-  width: 100%;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-  // &:first-child {
-  //   .cardContents {
-  //     flex-direction: row-reverse;
-  //   }
-
-  //   img {
-  //     height: 500px;
-  //   }
-  // }
-
-  @include mobile {
-    padding: 1rem;
-  }
+.noImage {
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  color: gray;
 }
 
-.cardContents {
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.projectList {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  width: 100%;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  gap: 20px;
 
   @include mobile {
-    text-align: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: none;
   }
 }
-.cardTextContents {
+
+.projectCard {
+  background-color: red;
   display: flex;
   flex-direction: column;
+  width: calc(50% - 1rem);
+  background: $light-bg;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform $transition-time ease-in-out;
+  padding: 1rem;
+}
+
+.projectThumbnail {
   width: 100%;
-
-  @include mobile {
-    width: 100%;
-  }
+  height: 350px;
+  object-fit: cover;
+  background-color: #def;
+  position: relative;
+  overflow: hidden;
 }
 
-.projectInfo {
-  flex: 1;
-  max-width: 100%;
-
-  @include mobile {
-    max-width: 100%;
-  }
+.projectContent {
+  padding: 16px;
 }
 
-.screenshot {
-  flex: 1;
-
-  @include mobile {
-    max-width: 100%;
-  }
-}
-
-.title {
-  font-size: 1.5rem;
+.projectTitle {
+  font-size: 20px;
   font-weight: bold;
-  line-height: 1.2;
-  text-align: center;
+  margin-bottom: 8px;
+}
 
-  @include mobile {
-    font-size: 1.2rem;
-    text-align: left;
+.projectDescription {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.techStack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+
+  span {
+    background: #e0e0e0;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
   }
 }
 
-.period {
-  font-size: 0.9rem;
-  color: gray;
-  text-align: center;
-  line-height: 1.3;
+.projectLinks {
+  display: flex;
+  gap: 10px;
 
-  @include mobile {
-    font-size: 0.8rem;
-    text-align: left;
+  a {
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background $transition-time;
   }
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0.5rem 0;
+.githubLink {
+  background: $dark-bg;
+  color: white;
 
-  @include mobile {
-    font-size: 1rem;
-    background: #f5f1ed;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: left;
+  &:hover {
+    background: darken($dark-bg, 10%);
   }
 }
 
-.description {
-  padding: 0;
-  margin: 10px 0;
+.demoLink {
+  background: $primary-color;
+  color: white;
 
-  @include mobile {
-    font-size: 0.9rem;
-    text-align: left;
+  &:hover {
+    background: darken($primary-color, 10%);
   }
 }
 
-.description li {
-  margin-bottom: 5px;
-  list-style-position: inside;
-  list-style-type: disc;
-}
-
-.noImage {
-  text-align: center;
-  font-size: 0.9rem;
-  color: gray;
-}
-
-.cardImgContents {
-  width: 60%;
-  margin-top: 1rem;
+.projectSwiper {
+  display: none;
 
   @include mobile {
-    width: 100%;
+    display: block;
   }
 }

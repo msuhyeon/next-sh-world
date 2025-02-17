@@ -1,3 +1,9 @@
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -6,11 +12,10 @@
 
 .mainContents {
   flex: 1;
-  margin: 4rem 25rem;
-}
+  margin: 4rem 20%;
+  // min-width: 1200px;
 
-@media (max-width: 780px) {
-  .mainContents {
+  @include mobile {
     flex: none;
     margin: 1rem 2rem;
   }
