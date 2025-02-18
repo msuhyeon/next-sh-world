@@ -3,12 +3,7 @@
 import { useState, useEffect } from "react";
 
 function useMediaQuery(query: string): boolean {
-  const [isMatching, setIsMatching] = useState<boolean>(() => {
-    // 서버 실행 시 방어코드
-    if (typeof window === "undefined") return false;
-
-    return window.matchMedia(query).matches;
-  });
+  const [isMatching, setIsMatching] = useState<null | boolean>(null);
 
   useEffect(() => {
     // 서버 실행 시 방어코드

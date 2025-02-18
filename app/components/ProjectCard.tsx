@@ -42,7 +42,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
               />
             )}{" "}
             {!project.video && !project.screenshot && (
-              <div className={styles.noImage}>No Image</div>
+              <div className={styles.noImage}>
+                <span>No Image</span>
+              </div>
             )}
           </div>
           <div className={styles.projectContent}>

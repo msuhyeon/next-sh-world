@@ -11,10 +11,13 @@ $transition-time: 0.2s;
 }
 
 .noImage {
-  margin: auto;
-  text-align: center;
-  font-size: 0.9rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
   color: gray;
+  background-color: #def;
 }
 
 .projects {
@@ -50,7 +53,6 @@ $transition-time: 0.2s;
   width: 100%;
   height: 350px;
   object-fit: cover;
-  background-color: #def;
   position: relative;
   overflow: hidden;
 }
