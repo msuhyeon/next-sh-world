@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import MainHeader from "@/components/MainHeader";
-import "./reset.css";
-import "./globals.css";
-import styles from "@/layout.module.scss";
+import "@/styles/reset.css";
+import "@/styles/globals.scss";
+import styles from "@/styles/layout.module.scss";
 import MainFooter from "./components/MainFooter";
 
 export const metadata: Metadata = {

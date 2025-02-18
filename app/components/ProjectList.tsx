@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import styles from "./ProjectList.module.scss";
+import styles from "@/styles/ProjectList.module.scss";
 
 const project = [
   // {
@@ -18,9 +18,9 @@ const project = [
     period: "2025.02",
     subtitle: "날씨 기반 의류 추천 웹 애플리케이션",
     description: [
-      "OpenWeather API를 활용하여 실시간 날씨 정보를 제공",
-      "Next.js SSR(Server-Side Rendering)을 적용하여 SEO를 강화하고 초기 콘텐츠를 서버에서 미리 제공",
-      "React Query를 활용해 데이터 캐싱을 최적화하고 불필요한 중복 호출을 방지",
+      "OpenWeather API를 활용하여 실시간 날씨 정보 제공",
+      "SSR을 적용하여 SEO를 강화하고 초기 컨텐츠를 서버에서 미리 제공",
+      "React Query를 활용해 데이터 캐싱을 최적화하고 불필요한 중복 호출 방지",
       "Zustand로 상태 관리하여 지역별 날씨 조회 UX 개선",
     ],
     techStack: [],

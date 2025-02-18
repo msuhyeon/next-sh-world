@@ -1,4 +1,4 @@
-import styles from "./MainHeader.module.scss";
+import styles from "@/styles/MainHeader.module.scss";
 
 export default function MainHeader() {
   return (
