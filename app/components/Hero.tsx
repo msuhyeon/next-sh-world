@@ -92,7 +92,7 @@ export default function Hero() {
           <div className={styles.skillBox}>
             <h3 className={styles.h3Title}>
               <FaBolt className={styles.icon} />
-              UI/UX 설계 및 사용자 중심 개발
+              사용자 중심 개발
             </h3>
             <ul>
               <li className={styles.introItem}>
