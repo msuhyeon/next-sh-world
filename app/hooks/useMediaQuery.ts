@@ -20,7 +20,7 @@ function useMediaQuery(query: string): boolean {
     return () => mediaQueryList.removeEventListener("change", updateMatch);
   }, [query]);
 
-  return isMatching;
+  return isMatching ?? false;
 }
 
 export default useMediaQuery;
