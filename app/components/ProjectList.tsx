@@ -1,3 +1,5 @@
+"use client";
+
 import ProjectCard from "./ProjectCard";
 import styles from "@/styles/ProjectList.module.scss";
 import useDeviceSize from "@/hooks/useDeviceSize";
@@ -37,7 +39,10 @@ const project = [
     title: "PR 사이트",
     period: "2024.08",
     subtitle: "포트폴리오용 웹 사이트(Nuxt.js)",
-    description: ["Nuxt.js와 Vue로 개발한 포트폴리오용 웹사이트"],
+    description: [
+      "Nuxt.js와 Vue로 개발한 포트폴리오용 웹사이트",
+      "Vercel의 서버리스 아키텍처를 적용하여 빌드 시간 최적화와 CDN 자동 배포를 실현개발 생산성과 배포 효율성 극대화",
+    ],
     github: "https://github.com/msuhyeon/monorepo-template",
     demoUrl: "",
     video: "https://next-sh-world.vercel.app/nuxt_portfolio.webp",
@@ -49,10 +54,9 @@ const project = [
             회원 가입, 본인 인증, 고객 지원 등의 기능을 통해 편리한 게임 이용
             환경을 제공합니다.`,
     description: [
-      "OpenWeather API를 활용하여 실시간 날씨 정보를 제공",
-      "Next.js SSR(Server-Side Rendering)을 적용하여 SEO를 강화하고 초기 콘텐츠를 서버에서 미리 제공",
-      "React Query로 API 데이터 캐싱하여 API 호출 수 50% 감소",
-      "Zustand로 상태 관리하여 지역별 날씨 조회 UX 개선",
+      "JWT 기반 인증 시스템 구축으로 보안성과 사용자 관리 효율성 향상",
+      "반응형 UI 구현을 통해 다양한 디바이스에서 최적화된 사용자 경험 제공",
+      "Options API에서 Composition API로 마이그레이션하여 렌더링 성능 최적화 및 번들 크기 최소화로 애플리케이션 속도 개선",
     ],
     techStack: [],
     demoUrl: "https://mir2-onestop.mironline.co.kr/",
@@ -78,18 +82,28 @@ const ProjectList = () => {
           ))}
         {/* 모바일에서는 Swiper 적용 */}
         {isMobile && (
-          <Swiper
-            modules={[Pagination]}
-            spaceBetween={0}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-          >
-            {project.map((item, index) => (
-              <SwiperSlide key={index}>
-                <ProjectCard project={item} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <>
+            <Swiper
+              modules={[Pagination]}
+              loop={true}
+              spaceBetween={0}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+            >
+              {project.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <ProjectCard project={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* 커스터마이징한 네비게이션 버튼 */}
+            {/* <button className="swiper-button-prev">Prev</button>
+            <button className="swiper-button-next">Next</button> */}
+          </>
         )}
       </div>
     </section>
