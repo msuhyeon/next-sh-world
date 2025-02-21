@@ -1,5 +1,10 @@
 import ProjectCard from "./ProjectCard";
 import styles from "@/styles/ProjectList.module.scss";
+import useDeviceSize from "@/hooks/useDeviceSize";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const project = [
   // {
@@ -60,13 +65,32 @@ const project = [
 ];
 
 const ProjectList = () => {
+  const { isDesktop, isMobile } = useDeviceSize();
+
   return (
     <section className={styles.projectSection}>
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectContainer}>
-        {project.map((item, index) => (
-          <ProjectCard key={index} project={item} />
-        ))}
+        {/* PC에서는 카드형 리스트 */}
+        {isDesktop &&
+          project.map((item, index) => (
+            <ProjectCard key={index} project={item} />
+          ))}
+        {/* 모바일에서는 Swiper 적용 */}
+        {isMobile && (
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={0}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+          >
+            {project.map((item, index) => (
+              <SwiperSlide key={index}>
+                <ProjectCard project={item} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </div>
     </section>
   );
