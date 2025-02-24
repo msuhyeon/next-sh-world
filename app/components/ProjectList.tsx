@@ -18,7 +18,7 @@ const project = [
       "Swiper.js를 활용한 프로젝트 스크린샷 슬라이더 적용 ",
       "Vercel을 통한 간편 배포 및 호스팅",
     ],
-    screenshot: ["ttps://next-sh-world.vercel.app/next_pr.webp"],
+    screenshot: ["https://next-sh-world.vercel.app/next_pr.webp"],
   },
   {
     title: "Weather wear",
@@ -60,11 +60,12 @@ const project = [
     ],
     techStack: [],
     demoUrl: "https://mir2-onestop.mironline.co.kr/",
-    screenshot: [
-      "https://next-sh-world.vercel.app/mir2_onestop_main.webp",
-      "https://next-sh-world.vercel.app/mir2_onestop_pay.webp",
-      "https://next-sh-world.vercel.app/mir2_onestop_event.webp",
-    ],
+    // screenshot: [
+    //   "https://next-sh-world.vercel.app/mir2_onestop_main.webp",
+    //   "https://next-sh-world.vercel.app/mir2_onestop_pay.webp",
+    //   "https://next-sh-world.vercel.app/mir2_onestop_event.webp",
+    // ],
+    video: "https://next-sh-world.vercel.app/mir2_onestop.webp",
   },
 ];
 
