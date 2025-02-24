@@ -9,17 +9,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const project = [
-  // {
-  //   title: "PR 사이트(Next.js)",
-  //   period: "2025.01",
-  //   subtitle: "Next.js + TypeScript 기반의 SSR 포트폴리오 사이트 ",
-  //   description: [
-  //     "반응형 설계로 데스크톱 및 모바일 환경 최적화  ",
-  //     "Swiper.js를 활용한 프로젝트 스크린샷 슬라이더 적용 ",
-  //     "Vercel을 통한 간편 배포 및 호스팅",
-  //   ],
-  //   screenshot: [],
-  // },
+  {
+    title: "PR 사이트(현재 페이지)",
+    period: "2025.01",
+    subtitle: "Next.js + TypeScript 기반의 SSR 포트폴리오 사이트",
+    description: [
+      "반응형 설계로 데스크톱 및 모바일 환경 최적화  ",
+      "Swiper.js를 활용한 프로젝트 스크린샷 슬라이더 적용 ",
+      "Vercel을 통한 간편 배포 및 호스팅",
+    ],
+    screenshot: ["ttps://next-sh-world.vercel.app/pr_site.webp"],
+  },
   {
     title: "Weather wear",
     period: "2025.02",
@@ -33,7 +33,7 @@ const project = [
     techStack: [],
     github: "https://github.com/msuhyeon/weather-wear",
     demoUrl: "https://weather-wear-theta.vercel.app/",
-    // video: "https://next-sh-world.vercel.app/weatherwear.webp",
+    screenshot: ["https://next-sh-world.vercel.app/weather_app.webp"],
   },
   {
     title: "PR 사이트",
@@ -61,9 +61,9 @@ const project = [
     techStack: [],
     demoUrl: "https://mir2-onestop.mironline.co.kr/",
     screenshot: [
-      "https://next-sh-world.vercel.app/mir2_onestop_main.png",
-      "https://next-sh-world.vercel.app/mir2_onestop_pay.png",
-      "https://next-sh-world.vercel.app/mir2_onestop_event.png",
+      "https://next-sh-world.vercel.app/mir2_onestop_main.webp",
+      "https://next-sh-world.vercel.app/mir2_onestop_pay.webp",
+      "https://next-sh-world.vercel.app/mir2_onestop_event.webp",
     ],
   },
 ];
