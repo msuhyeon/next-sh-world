@@ -18,7 +18,7 @@ const project = [
       "Swiper.js를 활용한 프로젝트 스크린샷 슬라이더 적용 ",
       "Vercel을 통한 간편 배포 및 호스팅",
     ],
-    screenshot: ["ttps://next-sh-world.vercel.app/pr_site.webp"],
+    screenshot: ["ttps://next-sh-world.vercel.app/next_pr.webp"],
   },
   {
     title: "Weather wear",
