@@ -37,7 +37,7 @@ export default function Hero() {
               <span>GitHub</span>
             </Link>
             <Link
-              href="https://www.notion.so/Fullstack-Developer-165abd807c8180c5a84fd2af8f89bde4?pvs=4"
+              href="https://pepper-yak-068.notion.site/165abd807c8180c5a84fd2af8f89bde4?pvs=4"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.navItem}
