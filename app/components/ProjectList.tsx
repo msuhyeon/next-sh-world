@@ -9,18 +9,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const project = [
-  {
-    title: "PR 사이트(현재 페이지)",
-    period: "2025.01",
-    subtitle: "Next.js + TypeScript 기반의 SSR 포트폴리오 사이트",
-    description: [
-      "반응형 설계로 데스크톱 및 모바일 환경 최적화  ",
-      "Swiper.js를 활용한 프로젝트 스크린샷 슬라이더 적용 ",
-      "Vercel을 통한 간편 배포 및 호스팅",
-    ],
-    github: "https://github.com/msuhyeon/next-sh-world",
-    screenshot: ["https://next-sh-world.vercel.app/next_pr.webp"],
-  },
+  // {
+  //   title: "PR 사이트(현재 페이지)",
+  //   period: "2025.01",
+  //   subtitle: "Next.js + TypeScript 기반의 SSR 포트폴리오 사이트",
+  //   description: [
+  //     "반응형 설계로 데스크톱 및 모바일 환경 최적화  ",
+  //     "Swiper.js를 활용한 프로젝트 스크린샷 슬라이더 적용 ",
+  //     "Vercel을 통한 간편 배포 및 호스팅",
+  //   ],
+  //   github: "https://github.com/msuhyeon/next-sh-world",
+  //   screenshot: ["https://next-sh-world.vercel.app/next_pr.webp"],
+  // },
   {
     title: "HSKPass",
     period: "2025.06 ~ 진행중",
@@ -91,9 +91,11 @@ const project = [
 const ProjectList = () => {
   const { isDesktop, isMobile } = useDeviceSize();
 
+  console.log("isDesktop=?", isDesktop);
+  console.log("isMobile=?", isMobile);
+
   return (
     <section className={styles.projectSection}>
-      여기
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectContainer}>
         {/* PC에서는 카드형 리스트 */}

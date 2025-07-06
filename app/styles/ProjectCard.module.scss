@@ -111,6 +111,7 @@ $transition-time: 0.2s;
   line-height: 1.5;
   padding-left: 1rem;
   list-style-type: disc;
+  font-size: 14px;
 
   @include mobile {
     margin-top: 1rem;
