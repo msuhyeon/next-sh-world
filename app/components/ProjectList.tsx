@@ -22,6 +22,24 @@ const project = [
     screenshot: ["https://next-sh-world.vercel.app/next_pr.webp"],
   },
   {
+    title: "HSKPass",
+    period: "2025.06 ~ 진행중",
+    subtitle: "HSK 자격시험 합격을 위한 맞춤형 학습 플랫폼",
+    description: [
+      "Next.js 15+ 기반 App Router 구조 및 서버 컴포넌트 활용을 통해 성능 최적화 구현",
+      "tailwindCSS와 shadcn/ui를 기반으로 일관된 디자인 시스템 구축 및 컴포넌트 레벨 재사용성 강화",
+      "Zustand를 통한 전역 클라이언트 상태 분리 및 비즈니스 로직 최소화 구조 설계",
+      "TanStack Query를 활용해 서버 상태의 캐싱, 데이터 동기화 및 에러 핸들링 자동화",
+      "Supabase를 이용한 인증 플로우 구현 및 RLS 기반 데이터 접근 제어 적용",
+      "OpenAI API를 연동하여 누락된 단어 정보(예: 예문, 병음 등)를 실시간 생성하고 저장하는 기능 개발",
+    ],
+    github: "https://github.com/msuhyeon/studyhsk",
+    screenshot: [
+      "https://next-sh-world.vercel.app/hsk_list.png",
+      "https://next-sh-world.vercel.app/hsk_quiz.png",
+    ],
+  },
+  {
     title: "Weather wear",
     period: "2025.02",
     subtitle: "날씨 기반 의류 추천 웹 애플리케이션",
@@ -75,6 +93,7 @@ const ProjectList = () => {
 
   return (
     <section className={styles.projectSection}>
+      여기
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectContainer}>
         {/* PC에서는 카드형 리스트 */}
